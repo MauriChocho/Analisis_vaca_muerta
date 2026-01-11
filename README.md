@@ -1,23 +1,22 @@
-# Análisis de Producción Vaca Muerta (2010-2025)
+# 🛢️ Análisis Predictivo y Business Intelligence: Vaca Muerta (2010-2025)
 
-Este proyecto combina **Data Engineering, Analytics y Machine Learning** para analizar la producción de hidrocarburos en la Cuenca Neuquina, Argentina.
+## 📌 Descripción del Proyecto
+Este proyecto integral de Data Science analiza la evolución de la Cuenca Neuquina, procesando más de **3 millones de registros** de la Secretaría de Energía de Argentina. El objetivo es doble: visualizar la transición hacia los recursos no convencionales y predecir la producción diaria de petróleo.
 
-## 🚀 Resumen del Proyecto
-Se procesaron más de 3 millones de filas de datos públicos de la Secretaría de Energía para identificar patrones de productividad y entrenar un modelo predictivo de caudal operativo.
+## 🚀 Características Técnicas
+* **Pipeline de Datos:** Integración con la **Kaggle API** para la descarga y procesamiento automatizado de grandes volúmenes de datos.
+* **Machine Learning:** Entrenamiento de un modelo **Random Forest Regressor** logrando un **$R^2$ de 0.80** tras una transformación logarítmica de la variable objetivo.
+* **Feature Engineering:** Creación de variables críticas para la industria como *Water Cut*, *GOR (Gas Oil Ratio)* y *Antigüedad del Pozo*.
+* **Business Intelligence:** Dashboard interactivo en Power BI para el seguimiento de KPIs operativos.
 
-## 🛠️ Herramientas utilizadas
-* **Python (Pandas, Scikit-Learn):** Limpieza de datos (ETL) y Modelado Predictivo.
-* **Power BI:** Dashboard interactivo para análisis de KPIs (TEF, Caudal, GOR).
-* **Random Forest Regressor:** Modelo con un **R² de 0.80** y **MAE de 1.94 bbl/día**.
+## 📂 Repositorios de Datos
+El dataset sin procesar se encuentra disponible en Kaggle para la comunidad(se utiliza y limpia en el notebook):
+🔗 [Dataset en Kaggle](https://www.kaggle.com/datasets/mauriciochocholacek/produccion-vaca-muerta-2010-2025)
 
-## 📊 Hallazgos clave
-* El modelo identificó la **Profundidad** como el factor de mayor peso (45%) en la producción.
-* La ingeniería de variables (*Water Cut* y *Antigüedad*) mejoró la precisión del modelo en un 60%.
-
-## 📂 Contenido del Repositorio
-* `analisis_vaca_muerta.ipynb`: Notebook con todo el proceso de limpieza y ML.
-* `data/`: (Opcional) Dataset procesado.
-* `dashboard/`: Capturas del reporte de Power BI.
+## 🛠️ Requisitos para Ejecución
+1. Clonar el repositorio.
+2. Configurar tus credenciales de Kaggle en los **Secrets** de Colab/Entorno (`KAGGLE_USER` y `KAGGLE_KEY`).
+3. Ejecutar `analisis_vaca_muerta.ipynb`.
 
 ---
-Mantenido por Mauricio Chocholacek - https://www.linkedin.com/in/mauricio-chocholacek/
+**Contacto:** https://www.linkedin.com/in/mauricio-chocholacek/ | mauri.chocholacek@gmail.com
